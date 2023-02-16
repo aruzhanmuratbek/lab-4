@@ -16,16 +16,20 @@
   <!-- Navbar -->
   <nav>
       <a class="logo" href="#">
-        <img src="logo.png" alt="logo" width="80px" height="80px">
+        <img src="logo.png" alt="logo" style="max-width:100%;height:auto;">
       </a>
-      <ul class="menu">
+    <div class="column">
+      <div class="col-3 col-s-3 menu"
+        <ul class="menu" style="font-size:2vw;">
         <li><a class="active" href="#task">Task</a></li>
         <li><a href="#requirements">Requirements</a></li>
         <li><a href="#submission">Submission</a></li>
         <li><a href="#grading">Grading</a></li>
         <li><a href="#deadline">Deadline</a></li>
         <li><a href="#">SignIn</a></li>
-      </ul>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- Main Content -->
@@ -36,8 +40,8 @@
     <hr>
     <article id="task">
       <h2 >Task</h2>
-      <p>
-        <img src="nature.jpeg" class="pictures" alt="" width="300px" height="210">
+      <p style="font-size:2vw;">
+        <img src="nature.jpeg" class="pictures" alt="" style="max-width:100%;height:auto;">
         As you have alredy learned in the last lecture, 
         CSS is about the presentation of the documents
         like HTML or XML.
@@ -45,7 +49,7 @@
         CSS styling rules to make this template HTML file look
         beautiful and interesting.  
       </p>
-      <p>
+      <p style="font-size:2vw;">
         There are no 
         limits to what techniques you use and how you 
         ultimately solve this task. 
@@ -56,12 +60,12 @@
     </article>
     <article id="requirements">
       <h2 >Requirements</h2>
-      <p>
+      <p style="font-size:2vw;">
         
         The main requirement for this task is to 
         style this HTML document without any 
         changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
+        <ul style="font-size:2vw;">
           <li>
             You can add <strong>id</strong>
             and <strong>class</strong> 
@@ -84,10 +88,10 @@
             </li>
         </ul>
       </p>
-      <p>
+      <p style="font-size:2vw;">
         In your stylesheet you <strong>must</strong>
          use these selectors:
-        <ul>
+        <ul style="font-size:2vw;">
           <li>Element selectors;</li>
           <li>Class selectors;</li>
           <li>Attribute selectors;</li>
@@ -95,12 +99,12 @@
           <li>Pseudo-class selectors.</li>
         </ul>
       </p>
-      <p>
+      <p style="font-size:2vw;">
         Also, you <strong>must</strong> 
         use the necessary CSS properties
         and demonstrate the following changes
         of the elements:
-        <ul>
+        <ul style="font-size:2vw;">
           <li>font and background colors;</li>
           <li>font family and size;</li>
           <li>margin, padding and borders;</li>
@@ -118,7 +122,7 @@
     </article>
     <article id="submission">
       <h2>Submission</h2>
-      <p>
+      <p style="font-size:2vw;">
        As usual, you <strong>must</strong> submit 
        your work via Github. All the files and images need to go to 
        your <strong> <i>username.github.io</i> </strong>repository. 
@@ -126,11 +130,11 @@
        through this domain name.
       </p>
       <h3>Info</h3>
-      <p>
+      <p style="font-size:2vw;">
          Insert an image of yourself here.
-         <img src="planets.jpg" class="pictures" alt="" width="300px" height="210">
+         <img src="planets.jpg" class="pictures" alt="" style="max-width:100%;height:auto;">
 
-        <ul>
+        <ul style="font-size:2vw;">
           <li>Aruzhan Muratbek</li>
         </ul>
       </p>
@@ -191,7 +195,11 @@
       </table>
     </article>
   </section>
-
+  <picture>
+    <source srcset="logo.jpg" media="(max-width: 800px)">
+    <source srcset="nature.jpg" media="(max-width: 1500px)">
+    <source srcset="planets.jpg">
+  </picture>
   <!-- Aside Information -->
   <aside>
     <h3>Important</h3>
@@ -207,45 +215,51 @@
       </article>
       </section>
      
-        <h3>Some Dummy Content</h3>
-       <section>
-        <article>
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-      <article>
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </article>
-    </section>
+      <h3 style="font-size:4vw;">Some Dummy Content</h3>
+      <section>
+       <article>
+         <div class="w3-row-padding">
+           <div class="w3-third">
+             <h4 style="font-size:2vw;">Article 1</h4>
+             <p style="font-size:2vw;">
+               Lorem ipsum dolor sit amet consectetur, 
+               adipisicing elit. Odit, fugiat eveniet! 
+               Optio quia perspiciatis earum ipsa dicta 
+               porro dolorum facere laudantium repellat 
+               ad necessitatibus asperiores dolor, molestias 
+               officiis corrupti iusto.
+         <a href="#">More...</a>
+       </p>
+     </div>
+     </article>
+     <article>
+       <div class="w3-third">
+       <h4 style="font-size:2vw;">Article 2</h4>
+       <p style="font-size:2vw;">
+         Lorem ipsum dolor sit amet consectetur, 
+         adipisicing elit. Odit, fugiat eveniet! 
+         Optio quia perspiciatis earum ipsa dicta 
+         porro dolorum facere laudantium repellat 
+         ad necessitatibus asperiores dolor, molestias 
+         officiis corrupti iusto.
+         <a href="#">More...</a>
+       </p></div>
+     </article>
+     <article>
+       <div class="w3-third">
+       <h4 style="font-size:2vw;">Article 3</h4>
+       <p style="font-size:2vw;">
+         Lorem ipsum dolor sit amet consectetur, 
+         adipisicing elit. Odit, fugiat eveniet! 
+         Optio quia perspiciatis earum ipsa dicta 
+         porro dolorum facere laudantium repellat 
+         ad necessitatibus asperiores dolor, molestias 
+         officiis corrupti iusto.
+         <a href="#">More...</a>  
+       </div>
+       </article>
+     </div>
+     </section>
   </aside>
 
   <!-- FOOTER -->
