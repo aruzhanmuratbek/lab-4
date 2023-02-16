@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -260,7 +260,7 @@
        </article>
      </div>
      </section>
-  </aside>
+ 
 
   <!-- FOOTER -->
   <footer>
@@ -310,5 +310,3 @@
       </ul>
     </div>
   </footer>
-</body>
-</html>
